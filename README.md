@@ -12,6 +12,10 @@
 
 Project created using [Rust](https://www.rust-lang.org/)
 
+## 📋 Prerequisites
+
+Install **Rust**, follow the [official documentation](https://www.rust-lang.org/tools/install)
+
 ## 💻 Development
 
 **Build:**
