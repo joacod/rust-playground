@@ -14,7 +14,7 @@ Project created using [Rust](https://www.rust-lang.org/)
 
 ## 📋 Prerequisites
 
-Install **Rust**, follow the [official documentation](https://www.rust-lang.org/tools/install)
+Install Rust 🦀, follow the [official documentation](https://www.rust-lang.org/tools/install)
 
 ## 💻 Development
 
@@ -29,6 +29,12 @@ cargo build
 ```bash
 cargo run
 ```
+
+## 📦 Crates
+
+Crates used in the project:
+
+- [colored](https://github.com/colored-rs/colored) - Coloring terminal
 
 ## ☕️ Did you like the project?
 
