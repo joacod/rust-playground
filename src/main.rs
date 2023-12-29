@@ -1,28 +1,17 @@
 mod menu;
-use std::io::{self, Write};
+mod option;
 
 fn main() {
     menu::display_welcome();
 
     loop {
         menu::display_menu();
-        let choice = get_user_input();
-        let exit = menu::handle_option(&choice);
+        let choice = menu::get_user_input();
+        let action = option::handle_select(&choice);
 
-        if exit {
-            break;
+        match action {
+            option::Action::Continue => continue,
+            option::Action::Exit => break,
         }
     }
-}
-
-fn get_user_input() -> String {
-    print!("Enter your choice: ");
-    io::stdout().flush().unwrap();
-
-    let mut input = String::new();
-    io::stdin()
-        .read_line(&mut input)
-        .expect("Failed to read line");
-
-    return input.trim().to_lowercase();
 }
